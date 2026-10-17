@@ -1,0 +1,69 @@
+--------------services----------------
+--------------------------------------
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  acpid.service                                  loaded active running ACPI event daemon
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  getty@tty1.service                             loaded active running Getty on tty1
+  irqbalance.service                             loaded active running irqbalance daemon
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  polkit.service                                 loaded active running Authorization Manager
+  rsyslog.service                                loaded active running System Logging Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  snapd.service                                  loaded active running Snap Daemon
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-networkd.service                       loaded active running Network Management
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service                                loaded active running Disk Manager
+  unattended-upgrades.service                    loaded active running Unattended Upgrades Shutdown
+  user@1000.service                              loaded active running User Manager for UID 1000
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+23 loaded units listed.
+--------------------------------------
+--------------------------------------
+-----------------CPU------------------
+--------------------------------------
+top - 10:54:57 up 22:30,  2 users,  load average: 0.00, 0.00, 0.00
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :    908.7 total,    214.1 free,    331.8 used,    490.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    576.9 avail Mem 
+--------------------------------------
+--------------------------------------
+----------------Memory----------------
+--------------------------------------
+               total        used        free      shared  buff/cache   available
+Mem:               0           0           0           0           0           0
+Swap:              0           0           0
+--------------------------------------
+--------------------------------------
+--------------Disk Space--------------
+--------------------------------------
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.8G  3.9G  43% /
+tmpfs            455M     0  455M   0% /dev/shm
+tmpfs            182M  920K  181M   1% /run
+efivarfs         128K  3.1K  120K   3% /sys/firmware/efi/efivars
+tmpfs            455M     0  455M   0% /tmp
+/dev/nvme0n1p13  989M  164M  759M  18% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+none             1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none             1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs             91M  8.0K   91M   1% /run/user/1000
+--------------------------------------
+--------------------------------------
+=======MONITORING COMPLETED===========

@@ -4,6 +4,9 @@
 ##Author: Adhil
 ##Date:16-10-26
 ##Version:v1
+
+#script for monitoring the ec2 
+
 echo '--------------services----------------'
 echo '--------------------------------------'
 sudo systemctl list-units --type=service --state=running
